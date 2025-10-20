@@ -1,0 +1,100 @@
+🚀 Starting Deployment Process...
+--------------------------------
+Enter your GitHub repository URL: Enter your GitHub Personal Access Token: Enter branch name (default: main): Enter remote server SSH username: Enter remote server IP address: Enter SSH private key path (e.g., ~/.ssh/mykey.pem): Enter application internal port (e.g., 3000): 
+Validating inputs...
+📥 Cloning repository...
+Cloning into 'hng-stage1-deploy'...
+✅ Docker configuration found.
+🔗 Testing SSH connection...
+SSH connection successful! ✅
+⚙️ Setting up remote environment...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Oct 20 22:23:05 UTC 2025
+
+  System load:  0.0               Processes:             116
+  Usage of /:   9.6% of 27.05GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.8.92
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+*** System restart required ***
+Updating packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 http://eu-west-2.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://eu-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://eu-west-2.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: Reading package lists...apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+Building dependency tree...
+Reading state information...
+docker.io is already the newest version (28.2.2-0ubuntu1~24.04.1).
+docker-compose is already the newest version (1.29.2-6ubuntu1).
+nginx is already the newest version (1.24.0-2ubuntu7.5).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+Docker version:
+Docker version 28.2.2, build 28.2.2-0ubuntu1~24.04.1
+Docker Compose version:
+docker-compose version 1.29.2, build unknown
+📤 Transferring project files to remote server...
+🐳 Building and starting containers...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Oct 20 22:23:05 UTC 2025
+
+  System load:  0.0               Processes:             116
+  Usage of /:   9.6% of 27.05GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.8.92
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+*** System restart required ***
+
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml
+        
+
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml
+        
